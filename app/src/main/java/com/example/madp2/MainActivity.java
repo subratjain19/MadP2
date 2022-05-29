@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     int player=1;
     int [][]winningStates={{0,1,2},{3,4,5},{6,7,8},{0,4,8},{2,4,6},{0,3,6},{1,4,7},{2,5,8}};
     int []gameState={-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
-
     public void load(View view){
         ImageView v = (ImageView) view;
         int tag = Integer.parseInt(v.getTag().toString());
@@ -56,10 +55,15 @@ public class MainActivity extends AppCompatActivity {
             gameState[i]=-1;
         }
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 }
+//end program
+//@Override
+//protected void onCreate(Bundle savedInstanceState) {
+//    super.onCreate(savedInstanceState);
+//    setContentView(R.layout.activity_main);
+//}
